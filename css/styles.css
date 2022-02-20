@@ -8,6 +8,12 @@
 .accent {
   color: #2196f3;
 }
+.logo:hover {
+  color: #2196f3;
+}
+.accent:hover {
+  color: #212121;
+}
 .list {
   list-style: none;
 }
@@ -18,3 +24,24 @@
 /* цвет фона шапки и футера #2F303A; */
 /* цвет фона основной #E5E5E5; */
 /* цвет фона вторичный #F5F4FA; */
+
+/* site-nav */
+.site-nav a {
+  color: #212121;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+}
+.features-text {
+  color: #757575;
+}
