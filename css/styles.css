@@ -49,6 +49,7 @@ body {
 /* site-nav */
 button {
   font-family: inherit;
+  cursor: pointer;
 }
 .nav-header {
   font-family: Roboto;
@@ -105,7 +106,6 @@ button {
 }
 .features-text {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -127,7 +127,6 @@ button {
   color: var(--primary-text-color);
 }
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -171,7 +170,6 @@ button {
   color: var(--primary-text-color);
 }
 .items-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
