@@ -5,7 +5,6 @@
   --secondary-text-color: #757575;
   --header-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
-  --primary-background-color: #e5e5e5;
 }
 body {
   color: var(--primary-text-color);
@@ -26,10 +25,12 @@ body {
 .accent {
   color: var(--accent-color);
 }
-.logo:hover {
+.logo:hover,
+.logo:focus {
   color: var(--accent-color);
 }
-.accent:hover {
+.accent:hover,
+.accent:focus {
   color: var(--primary-text-color);
 }
 .list {
@@ -51,27 +52,19 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
-.nav-header {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-}
-.site-nav a {
+
+.sitenav-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.sitenav-link:hover,
+.sitenav-link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.sitenav-link .link.current {
   color: var(--accent-color);
 }
 .hero {
@@ -133,23 +126,19 @@ button {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.auth-nav {
+.authnav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.auth-nav a:hover,
-.auth-nav a:focus {
-  color: var(--accent-color);
-}
-.auth-nav .link.current {
+.authnav-link:hover,
+.authnav-link:focus {
   color: var(--accent-color);
 }
 
-.button-primary,
-.button {
+.button-primary {
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
   font-weight: 500;
@@ -158,7 +147,8 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.button-secondary {
+.button-primary:hover,
+.button-primary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -176,13 +166,6 @@ button {
 
   color: var(--secondary-text-color);
 }
-.footer-list {
-  list-style: none;
-}
-.footer-list a:hover,
-.footer-list a:focus {
-  color: var(--primary-white-color);
-}
 
 footer {
   background-color: var(--header-background-color);
@@ -194,24 +177,27 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.footer-logo:hover {
+.footer-logo:hover,
+.footer-logo:focus {
   color: var(--accent-color);
 }
 .footer-accent {
   color: var(--accent-color);
 }
-.footer-accent:hover {
+.footer-accent:hover,
+.footer-accent:focus {
   color: var(--primary-white-color);
 }
-.footer-list .current.link {
-  color: var(--primary-white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+
+.footer-list {
+  list-style: none;
+  font-style: normal;
 }
-.info-footer {
-  font-family: Roboto;
+.infofooter-link:hover,
+.infofooter-link:focus {
+  color: var(--primary-white-color);
+}
+.infofooter-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
